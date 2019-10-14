@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+
+<!--
+	Name: Ville Peltonen
+	Date Created: 10/4/2019
+	Most recent revision: 10/13/2019
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Menu</title>
+
+	<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+			
+	<!-- external stylesheet -->
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		body {
+			background-color: #FFF5EE;
+		}
+
+		#menu {
+			margin: 20px;
+		}
+
+		/*	styles for table without Bootstrap
+			table, th, td {
+				border-collapse: collapse;
+				text-align: left;
+			}
+
+			table {
+				border: 1px solid black;
+				width: 400px;
+				margin: auto;
+			}
+		
+			tr {
+				height: 40px;
+			} */
+
+			.table-striped {
+				border: 2px solid black;
+			}
+
+			tbody tr:nth-child(even) {
+				background-color: #F6BA14;
+			}
+
+			h2 {
+				font-weight: bold;
+			}
+
+			ion-icon {
+				 font-size: 20px;
+			}
+			</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Murphy's Grill</h1>
+		</header>
+		<nav>
+			<a class="btn badge-pill" href="index.html"><ion-icon name="home"></ion-icon></a>
+			<a class="btn badge-pill"href="menu.html">Menu</a>
+			<a class="btn badge-pill"href="contact.html">Contact Us</a>
+			<div class="clear-float"></div>
+		</nav>
+		<section id="menu">
+		<div class="container">
+			<div class="row">
+								
+			<div class="col-lg-4 col-md-6">	
+			<h2>Burger and Fries</h2>
+			<p>An American Classic!</p>
+			<p>Your choice - with or without cheese</p>
+			<p>Pickle, onion, tomato and lettuce</p>
+			<p>Served with our famous thick cut french fries</p>
+			<p>$7.95</p>
+			</div>
+			
+			<div class="col-lg-4 col-md-6">	
+			<h2>Hot Dog and Chips</h2>
+			<p>A Summer Classic!</p>
+			<p>Your choice - white or wheat bun</p>
+			<p>Relish, mustard, and ketchup</p>
+			<p>Served with our house-made chips</p>
+			<p>$7.95</p>
+			</div>
+
+			<div class="col-lg-4 col-md-6">	
+			<h2>Italian Sausage and Peppers</h2>
+			<p>An All-Time Favorite!</p>
+			<p>Your choice - mild or spicy Cole Slaw</p>
+			<p>Served with garlic mashers</p>
+			<p>$10.95</p>
+			</div>
+
+			<div class="col-lg-4 col-md-6">	
+			<h2>Tenderloin Sandwich and Chips</h2>
+			<p>Really Hits the Spot!</p>
+			<p>Plain or Sesame Seed Bun</p>
+			<p>Pickle, onion, tomator and lettuce</p>
+			<p>Served with our house-made chips</p>
+			<p>$8.95</p>
+			</div>
+
+			<div class="col-lg-4 col-md-6">	
+			<h2>House Salad</h2>
+			<p>On the Lighter Side</p>
+			<p>Your choice - with or without cheese</p>
+			<p>Iceberg lettuce, tomatoes, peppers</p>
+			<p>Thousand Island or Ranch Dressing</p>
+			<p>Served with a dinner roll</p>
+			<p>$6.95</p>
+			</div>
+
+			<div class="col-lg-4 col-md-6">	
+			<h2>Brisket Sandwich and Fries</h2>
+			<p>A Taste of Texas!</p>
+			<p>Smoked Brisket on thick-cut Texas Toast</p>
+			<p>Cole Slaw</p>
+			<p>Served with our famous thick-cut french fries</p>
+			<p>$7.95</p>
+			</div>
+			</div> <!-- row div -->
+
+			<div class="row">
+			<div class="col-lg-4 col-md-6 offset-lg-4 offset-md-3">	
+			<table class="table table-striped">
+				<thead>
+					<tr class="table-danger">
+						<th colspan="2">Beverages</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table-warning">
+						<td>Root Beer</td>
+						<td>$3.00</td>
+					</tr>
+					<tr>
+						<td>Bottled Water</td>
+						<td>$1.25</td>
+					</tr>
+					<tr class="table-warning">
+						<td>Lemonade</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Iced Tea</td>
+						<td>$1.25</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</div> <!-- row div -->
+		</div> <!-- container div -->							
+		</section>
+	</main>
+	<footer>
+		<p>5746 Franklin Dr, NewCity, MN 87589</p>
+		<p>(555)-555-5555</p>
+	</footer>
+	
+	<!-- scripts -->
+
+	<!-- Ionicon script -->
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+	<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
